@@ -10,8 +10,9 @@
 ## 技術仕様メモ
 - このwebサイトはwordpressを使用しており、当リポジトリはwordpressの独自テーマフォルダです。
 - 構築環境ではLocalを使用していました。(y-fudosan-2)
+- サーバーはXserver
 - **このサイトでは物件情報のみWordPressのデータベースから動的に取得しています。**  
 WordPressの記事一覧コンポーネントを設置した固定ページを作成し、そこからscript-list-ajex.jsで必要な要素だけindexページに非同期で挿入しています。本番環境ではscript-list-ajex.js内の3行目をその固定ページのアドレスに変更してください。
-- admin ID:singo , pass:000
+- 構築環境admin ID:{name} , pass:000
 ***
 2025年2月頃に作成したサイトを2026年10月にgithubに今更ながら一応アップロードしたよ。

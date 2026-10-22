@@ -1,0 +1,409 @@
+body{
+    font-fa ily:"  PLUS 1 Code";
+     argin: 0;
+    background-color: #d4e1db;
+}
+
+:root{
+    --display-width: 700px;/*PC時最大幅変数*/
+}
+
+
+
+
+.display{
+    width: 100%;
+     ax-width: var(--display-width);
+     argin: 0 auto 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+
+.top-area{
+    background-color: #d4e1db00;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+
+.scroll-i ages{
+    display: flex;
+}
+.top-i age{
+    width: auto;
+    height: 500px;
+    ani ation: 25s linear infinite i age-scroll;
+    position: relative;
+}
+@keyfra es i age-scroll{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: calc(667px * 2);
+    }
+}
+
+
+.heder{
+    height: 100px;
+    color: #000000;
+    width: 100%;
+    background-color: #d4e1db00;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    transition: 0.3s;
+}
+.heder.scrolled{
+    background-color: #d4e1db;
+    height: 60px;
+     argin: -10px 0 0 0;
+}
+.heder.scrolled > .page-titele{
+    opacity: 1;
+}
+
+.page-titele{
+    opacity: 0;
+    font-size: 23px;
+    position: relative;
+    top: 21px;
+    left: 15px;
+    transition: 0.3s;
+}
+. anu-button{
+    width: fit-content;
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    transfor : scale(1.2);
+}
+
+
+.top-page-titele{
+    position: relative;
+    top: -270px;
+    left: 20px;
+    font-size: 28px;
+    color: #000000;
+}
+
+
+.wave{
+    position: absolute;
+    botto : -1px;
+}
+
+
+
+. anu{
+    background-color: #26312b;
+    position: fixed;
+    top: 0;
+    height: 0vh;
+    width: 100%;
+     ax-width: var(--display-width);
+    z-index: 600;
+    overflow: hidden;
+    color: #fff;
+    transition: 0.5s;
+    transition-ti ing-function: cubic-bezier(0.52, 0.03, 0.11, 0.96);
+}
+.opened{
+    /*ani ation: 0.3s both  anu;*/
+    display: block;
+    height: 100vh;
+}
+/*
+@keyfra es  anu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+*/
+. anu-close-button{
+    position: relative;
+    left: calc(100% - 50px);
+    top: 25px;
+    transfor : scale(1.2);
+    width: fit-content;
+}
+.wrap- anu-links{
+    width: calc(100% - 40px);
+    position: relative;
+    top: 60px;
+    left: 40px;
+}
+.wrap- anu-links > a{
+    text-decoration: none;
+}
+. anu-link{
+    color: #fff;
+    font-size: 20px;
+     argin-botto : 30px;
+}
+.opened > .wrap- anu-links > a > . anu-link{
+    ani ation: 0.3s both  anu-link;
+}
+@keyfra es  anu-link{
+    0%{
+        transfor : translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        transfor : translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.overview{
+    background-color: #ffffff;
+    height: 260px;
+    width: 100%;
+    position: relative;
+}
+.wrap-overview-sentence{
+    width: calc(100% - 15px);
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+.overview-titele{
+    font-size: 25px;
+}
+.overview-sentence{
+     argin-top: 8px;
+    opacity: 1;
+}
+
+
+
+.list{
+    background-color: #e6edea;
+    height: 500px;
+    position: relative;
+}
+
+.list-section-titele{
+    font-size: 25px;
+     argin: 0 0 0 20px;
+}
+
+#list-area > #page > #header , hr , p{
+    display: none;
+}
+.wp-block-latest-posts__list{
+    width: 100%;
+    overflow-x: scroll;
+     argin: 0;
+    padding: 30px 0 0 0;
+    display: flex;
+}
+.wp-block-latest-posts__list > li{
+    list-style: none;
+     in-width: 300px;
+     argin: 0 20px 0 20px;
+}
+.wp-block-latest-posts__featured-i age > i g{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.wp-block-latest-posts__post-title{
+    font-size: 20px;
+    color: #024624;
+}
+.wp-block-latest-posts__post-excerpt{
+     argin: 5px 0 20px 0;
+}
+.screen-reader-text{
+    display: none;
+}
+
+
+
+.info{
+    background-color: #d4e1db;
+    position: relative;
+    padding-botto : 60px;
+}
+.info-section-titele{
+    font-size: 25px;
+     argin: 0 0 0 20px;
+}
+
+.wrap-info-contents{
+    display: block;
+    width: calc(100% - 40px);
+     argin: 20px auto 0 auto;
+}
+.info-content-row{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+.info-content-row.fill{
+    background-color: #ffffff67;
+}
+.cell-left{
+    width: 100px;
+    text-align: end;
+    padding: 15px 10px 15px 0px;
+    border-right: solid 1px #00000077;
+}
+.cell-right{
+    width: calc(100% - 100px);
+    padding: 15px 0px 15px 10px;
+}
+
+.info-business{
+    width: calc(100% - 40px);
+     argin: 20px auto 0 auto;
+    font-size: 18px;
+}
+
+.wrap-google- ap{
+    width: 100%;
+    text-align: center;
+}
+.google- ap{
+    width: calc(100% - 40px);
+     argin: 20px 0 0 0;
+    border-radius: 10px;
+}
+
+.shop-i ages{
+    width: 100%;
+}
+.shop-i age-1{
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 16/9;
+    width: calc(90%);
+    height: auto;
+    border-radius: 0 60px 60px 0;
+    border: solid #d4e1db;
+    border-width: 8px 8px 8px 0;
+}
+.shop-i age-2{
+    position: relative;
+    aspect-ratio: 16/9;
+    top: -60px;
+    left: 10%;
+    width: calc(90%);
+    height: auto;
+    border-radius: 60px 0 0 60px;
+}
+
+
+
+
+.contact{
+    background-color: #b8d1c6;
+    height: 600px;
+}
+.wrap-contact-content{
+    width: calc(100% - 40px);
+     argin: 20px auto 0 auto;
+}
+.contact-content-titele{
+    font-size: 20px;
+    width: fit-content;
+    height: 15px;
+    padding: 10px 17px 10px 10px;
+    background-color: #ffffffb7;
+    border-radius: 10px 10px 0 0;
+}
+. ail-icon{
+    position: relative;
+    top: 4px;
+     argin: 0 5px 0 5px;
+}
+.contact-content{
+    width: 100%;
+    background-color: #ffffffb7;
+    height: 115px;
+    border-radius: 0 10px 10px 10px;
+}
+.contact-content.fax{
+    height: 72px;
+}
+. ailaddress{
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+. ail-link{
+    background-color: #26312b;
+    color: #fff;
+    width: 140px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    position: relative;
+    top: 35px;
+    left: calc(100% - 140px - 10px);
+    border-radius: 5px;
+}
+.wrap- ail-link{
+    text-decoration: none;
+}
+
+
+
+
+.footer{
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 200px;
+}
+.footer-titele{
+    color: #bebebe;
+    width: 100%;
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.back-l{
+    width: calc(calc(100vw - 700px) / 2 - 8px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.back-wave{
+    position: absolute;
+    right: 0px;
+    botto : 0px;
+    width: var(--display-width);
+}
+
+
+.back-l-top-area{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.back-l-overview{
+    width: 100%;
+    height: 260px;
+    position: relative;
+    background-color: #ffffff;
+}
